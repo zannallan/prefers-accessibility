@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.banner {
+  position: relative;
+  background-color: #e2e2e2;
+  min-height: 25rem;
+  overflow: hidden;
+}
+
+.banner h1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1rem;
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.gear {
+  position: absolute;
+  animation: spin 6s linear infinite;
+  opacity: .2;
+}
+
+.gear-big {
+  left: 5%;
+  bottom: 3rem;
+  width: 30em;
+}
+
+.gear-small {
+  right: 15%;
+  bottom: -3rem;
+  width: 16em;
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* stylelint-disable media-feature-name-no-unknown */
+
+/**
+ * =============
+ * Write your “prefers” media queries here, between these two `stylelint` comments.
+ * Unfortunately, Markbot, is a little too old to understand them. :(
+ * =============
+ */
+
+/* stylelint-enable */

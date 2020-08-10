@@ -1,0 +1,23 @@
+repo: "prefers-accessibility"
+canvasCourse: "web-design-2"
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - css
+
+html:
+  - path: "index.html"
+    locked: true
+
+css:
+  - path: "css/main.css"
+    search:
+      - "\\/\\* stylelint-disable media-feature-name-no-unknown \\*\\/"
+      - "@media \\(prefers-reduced-motion\\) \\{[^}]+animation:"
+      - "@media \\(prefers-color-scheme: dark\\) \\{[^}]+background-color:"
+      - "@media \\(prefers-color-scheme: dark\\) \\{[^}]+color:"
+
+screenshots:
+  - path: "index.html"
+    sizes: [1000]
