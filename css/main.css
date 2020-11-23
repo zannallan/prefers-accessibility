@@ -69,15 +69,24 @@ html {
  * Unfortunately, Markbot, is a little too old to understand them. :(
  * =============
  */
-@media (prefers-colour-scheme: dark) {
+
+@media (prefers-color-scheme: dark) {
+
   .banner {
-    background-color: #111;
+    background-color: #000;
   }
+
+  .banner h1 {
+    color: #fff;
+  }
+
 }
 
 @media (prefers-reduced-motion) {
+
   .gear {
     animation: none;
   }
+
 }
 /* stylelint-enable */
